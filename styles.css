@@ -1,0 +1,200 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background-color: #333;
+}
+
+.navbar-nav .nav-link {
+    color: orangered;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+.section {
+    padding: 100px 0;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 2.5rem;
+    color:darksalmon;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 3s forwards;
+}
+
+.welcome-message + p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 3s forwards 2s;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h5 {
+    color: palevioletred;
+}
+
+h1 {
+    font-size: 40px;
+    
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    max-width: 600px; 
+    margin: 0 auto 20px; 
+}
+     
+#home{
+    text-align: center;
+
+}
+
+h4 {
+    color: red;
+}
+
+a {
+    font-size: 20px;
+}
+
+h3 {
+    color: blue;
+}
+
+h2 {
+    color: orangered;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.skill-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+img {
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+label {
+    color: red;
+    display: block;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%; 
+    max-width: 500px; 
+}
+
+#contact {
+    text-align: center; 
+}
+
+#contact .container {
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
